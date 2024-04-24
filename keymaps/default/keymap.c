@@ -1,17 +1,5 @@
 #include QMK_KEYBOARD_H
 
-// #ifdef OLED_ENABLED
-
-bool oled_task_user(){
-    oled_set_cursor(0, 1);
-    oled_write("Hello Keyboard", false);
-    return false;
-}
-
-rgb_matrix_mode(ENABLE_RGB_MATRIX_PIXEL_FLOW)
-
-//#endif
-
  const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
     //  |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
